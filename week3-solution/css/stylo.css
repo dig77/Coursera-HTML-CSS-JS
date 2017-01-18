@@ -1,4 +1,135 @@
-h1 {
-  font-size: 8em;
-  color: red;
+/*GLOBAL STYLE*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+
+/*NAVBAR*/
+
+header nav.navbar.dark {
+    background: #616161;
+    color: #fff;
+    border-radius: 0;
+}
+
+header nav.navbar.dark a {
+    color: #fff;
+}
+
+header nav .navbar-toggle {
+    border-color: whitesmoke;
+}
+
+header nav .navbar-toggle .icon-bar {
+    background: whitesmoke;
+}
+
+header nav .navbar-toggle:hover {
+    background: #4DB6AC;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #4DB6AC;
+    color: #333;
+}
+
+.navbar-nav>li>a {
+    background: #3c3b3b;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+
+
+/*MAIN CONTENT*/
+
+.content-title {
+    margin: 20px 0 50px;
+}
+
+.content-title h1 {
+    padding-top: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.content-main-area {
+    margin-bottom: 5%;
+}
+
+.content-main-area .module-wrap {
+    background-color: #fff;
+}
+
+.content-main-area .module-wrap .module-header h3 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.content-main-area .module-wrap .module-header.color1 {
+    background-color: #4680FF;
+    color: #fff;
+}
+
+.content-main-area .module-wrap .module-header.color2 {
+    background-color: #FB617f;
+    color: #fff;
+}
+
+.content-main-area .module-wrap .module-header.color3 {
+    background-color: #FEB64D;
+    color: #fff;
+}
+
+.content-main-area .module-wrap .module-header.color4 {
+    background-color: #00ACC1;
+    color: #fff;
+}
+
+.content-main-area .module-wrap .module-content {
+    padding: 20px 10px;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    text-align: justify;
+}
+
+.content-main-area .module-wrap .module-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #E0E0E0;
+}
+
+.content-main-area .module-wrap .module-footer a {
+    font-size: 1.1em;
+}
+
+
+/*QUERIES*/
+
+
+/* Small Devices, Tablets */
+
+@media(min-width:768px) and (max-width:991px) {
+    .row>div:nth-child(3) {
+        margin-top: 30px;
+    }
+}
+
+
+/* Extra Small */
+
+@media(max-width:767px) {
+    .row>div {
+        margin-bottom: 30px;
+    }
 }
